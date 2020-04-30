@@ -59,7 +59,7 @@ public class JDBC implements DAO {
 	@Override
 	public Alumno buscarAlumno(int idAlumno) {
 		// TODO Auto-generated method stub
-		sql ="SELECT * FROM Alumnos WHERE idAlumno =?";
+		sql ="SELECT * FROM Alumnos WHERE idAlumno = ?";
 		return conexion.queryForObject(sql, new RMAlumnos(), idAlumno);
 	}
 

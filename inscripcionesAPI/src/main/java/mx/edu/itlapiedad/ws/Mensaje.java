@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import mx.edu.itlapiedad.DAO.DAO;
-import mx.edu.itlapiedad.models.Docente;
-import mx.edu.itlapiedad.models.Materias;
 import mx.edu.itlapiedad.models.Alumno;
 import mx.edu.itlapiedad.models.Carreras;
+import mx.edu.itlapiedad.models.Docente;
+import mx.edu.itlapiedad.models.Materias;
+
+
 
 @RestController
 @RequestMapping("/tec")
@@ -50,7 +52,7 @@ public class Mensaje {
 	}
 	
 	//Estos son los alumnos
-	@GetMapping("alumno/idAlumno")
+	@GetMapping("alumno/{idAlumno}")
 	public Alumno buscarAlumno(@PathVariable int idAlumno) {
 		return repositorio.buscarAlumno(idAlumno);
 	}
