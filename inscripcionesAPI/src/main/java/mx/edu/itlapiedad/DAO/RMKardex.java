@@ -10,11 +10,11 @@ public class RMKardex implements RowMapper<Kardex> {
 
 	@Override
 	public Kardex mapRow(ResultSet rs, int rowNum) throws SQLException {
-		Kardex kardex= new Kardex();
+		/*Kardex kardex= new Kardex();
 		kardex.setIdkardex(rs.getInt("idkardex"));
 		kardex.setMaterias_idmaterias(rs.getInt("materias_idmaterias"));
-		kardex.setAlumnos_idAlumno(rs.getInt("alumnos_idAlumno"));
-		return kardex;
+		kardex.setAlumnos_idAlumno(rs.getInt("alumnos_idAlumno"));*/
+		return null;
 	}
 
 }
