@@ -76,7 +76,7 @@ public class JDBC implements DAO {
 		sql ="select * from alumnos where idCarrera =?";
 		return conexion.query(sql,new RMAlumnos(), idcarrera);
 	}
-	
+	//kardex
 	@Override
 	public List<Materias> consultaKardexMateria(int idalumno) {
 		sql ="select m.idmaterias, m.creditos, m.idcarrera,  m.nombre_materia, m.codigo_materia, c.calificacion\r\n" + 
