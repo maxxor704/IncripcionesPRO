@@ -18,13 +18,13 @@ import mx.edu.itlapiedad.models.Pago;
 
 @RestController
 @RequestMapping("/tec")
-@CrossOrigin(origins = "*", methods={RequestMethod.GET})
+@CrossOrigin(origins = "*", methods={RequestMethod.POST})
 public class ITLP_Pago {
 	@Autowired
 	DAO repositorio;
 	
 	//RUTA DE GUARDAR PAGO
-		@PostMapping("guardarPago")
+		@PostMapping("Pago")
 		public void guardarpago(@RequestBody Pago pago) {
 			repositorio.guardarpago(pago);
 		}
